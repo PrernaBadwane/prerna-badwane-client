@@ -23,7 +23,7 @@ const SkillStrip = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="text-white text-[8px] sm:text-sm md:text-lg font-medium uppercase whitespace-nowrap px-4"
+            className="text-white text-[10px] sm:text-sm md:text-lg font-medium uppercase whitespace-nowrap px-4"
           >
             {skill}
           </div>
@@ -35,7 +35,7 @@ const SkillStrip = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="text-white text-[8px] sm:text-sm md:text-lg font-medium uppercase whitespace-nowrap px-4"
+            className="text-white text-[10px] sm:text-sm md:text-lg font-medium uppercase whitespace-nowrap px-4"
           >
             {skill}
           </div>

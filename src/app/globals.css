@@ -12,19 +12,30 @@
   /* Primary */
 
   --color-primary-05: #011109;
+  --color-primary-10: #8CD8BC;
 
   /* neutral */
 
   --color-secondary-05: #5139EA;
+  --color-secondary-10: #5139EA99;
 
   --color-neutral-05: #1b1b1b;
+  --color-neutral-10: #FFFFFF1F;
+  --color-neutral-15: #FFFFFF14;
+  --color-neutral-20: #FFFFFF0D;
+  --color-neutral-25: #DADADA;
 
   /* breakpoints */
   --breakpoint-xs: 480px;
   --breakpoint-3xl: 1920px;
 
   /* Shadows */
-  --shadow-10: 0 20px 44px 0 rgba(0, 0, 0, 0.16); 
+  --shadow-10: 0 20px 44px 0 rgba(0, 0, 0, 0.16);
+
+
+  /* text shadow */
+  --text-shadow-10:  0 4px 5px rgba(132, 132, 132, 0.25);
+
 
   /* Gradients */
   --bg-gradient-10: linear-gradient(0deg, #000 0%, rgba(96, 0, 0, 0.02) 100%);
@@ -33,6 +44,7 @@
 .bg-gradient-10 {
   background: var(--bg-gradient-10);
 }
+.text-shadow-10 { text-shadow: var(--text-shadow-10); }
 
 .scrollbar-none::-webkit-scrollbar {
   display: none;

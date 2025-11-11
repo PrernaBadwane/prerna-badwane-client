@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex items-center justify-center gap-1.5">
           <Image src={ICONS.logo} alt="Logo" className="size-7" />
           <h1 className="uppercase font-bold text-sm leading-normal tracking-[0.42px] text-white">
-            Prerne <br /> Badwane
+            Prerna <br /> Badwane
           </h1>
         </div>
         <div className="hidden lg:flex items-center justify-center">
@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Button label="Download Resume" classname="text-sm px-4 py-2.5 flex-row-reverse my-[3px]" icon={ICONS.content} labelClassname="hidden sm:visible"/>
+        <Button label="Download Resume" classnames="text-sm px-4 py-2.5 flex-row-reverse my-[3px]" icon={ICONS.content} labelClassname="hidden sm:block"/>
       </div>
     </div>
   );
