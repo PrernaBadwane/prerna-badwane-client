@@ -1,26 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@theme {
+
+  /* fonts */
+  --font-Figtree: 'Figtree', sans-serif;
+
+  /* Colors */
+
+  /* Primary */
+
+  --color-primary-05: #011109;
+
+  /* neutral */
+
+  --color-secondary-05: #5139EA;
+
+  --color-neutral-05: #1b1b1b;
+
+  /* breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-3xl: 1920px;
+
+  /* Shadows */
+  --shadow-10: 0 20px 44px 0 rgba(0, 0, 0, 0.16); 
+
+  /* Gradients */
+  --bg-gradient-10: linear-gradient(0deg, #000 0%, rgba(96, 0, 0, 0.02) 100%);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.bg-gradient-10 {
+  background: var(--bg-gradient-10);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
