@@ -8,6 +8,7 @@ import profile from "../assets/Images/profile.webp";
 
 // strokes
 import stroke1 from "../assets/BackgroundGradients/stroke1.svg";
+import stroke2 from "../assets/BackgroundGradients/stroke2.svg";
 // social media
 import instagram from "../assets/Icons/socialMedia/instagrma.svg";
 import likedIn from "../assets/Icons/socialMedia/linkedin.svg";
@@ -28,4 +29,5 @@ export const IMAGES = {
 };
 export const STROKES = {
   stroke1,
+  stroke2,
 };

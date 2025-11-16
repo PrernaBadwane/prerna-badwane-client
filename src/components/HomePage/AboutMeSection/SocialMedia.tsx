@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const SocialMedia = () => {
   return (
-    <div className=" mt-9 space-y-6">
+    <div className=" mt-9 space-y-3 md:space-y-6">
       <h5 className="font-Figtree text-white text-sm leading-3.5">
         Social Media
       </h5>

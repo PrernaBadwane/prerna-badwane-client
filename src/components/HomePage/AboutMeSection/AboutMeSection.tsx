@@ -8,9 +8,9 @@ import CounterSection from "../CounterSection/CounterSection";
 
 const AboutMeSection = () => {
   return (
-    <div className="relative bg-primary-05 h-fit py-32 lg:py-52">
-      <div className="absolute top-[-220]">
-        <Image src={STROKES.stroke1} alt="stroke-background" />
+    <div className="relative bg-primary-05 h-full pt-32 pb-14 lg:pt-52 lg:pb-24">
+      <div className="absolute top-10 h-full">
+        <Image src={STROKES.stroke1} alt="stroke-background" className="h-full w-full" />
       </div>
       <>
         <Container>
@@ -23,7 +23,7 @@ const AboutMeSection = () => {
               <SocialMedia />
             </div>
             <div className="w-full lg:w-[50%]">
-              <p className="text-2xl text-white font-medium">
+              <p className="text-base md:text-lg lg:text-2xl text-white font-medium">
                 I’m Prerna Badwane, a developer passionate about solving
                 real-world challenges through smart, intuitive software. I build
                 digital systems that streamline operations, boost efficiency,
@@ -38,7 +38,7 @@ const AboutMeSection = () => {
               <Button
                 label="Discover More"
                 icon={ICONS.whiteTopRightArrow}
-                classnames="flex-row-reverse bg-transparent text-white border-white font-semibold py-3.5 px-5 mt-13"
+                classnames="flex-row-reverse bg-transparent text-white border-white font-semibold py-3.5 px-5 mt-6 lg:mt-13"
               />
             </div>
           </div>
