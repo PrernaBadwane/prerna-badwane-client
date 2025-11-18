@@ -23,7 +23,7 @@ const AboutMeSection = () => {
               <SocialMedia />
             </div>
             <div className="w-full lg:w-[50%]">
-              <p className="text-base md:text-lg lg:text-2xl text-white font-medium">
+              <p className="text-base md:text-lg lg:text-xl leading-[140%] text-white font-medium">
                 I’m Prerna Badwane, a developer passionate about solving
                 real-world challenges through smart, intuitive software. I build
                 digital systems that streamline operations, boost efficiency,

@@ -3,7 +3,7 @@ import React from 'react'
 
 const CounterSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-6">
+    <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-6">
       {CounterData.map((item, key) => (
         <div
           key={key}

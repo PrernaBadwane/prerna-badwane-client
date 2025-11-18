@@ -13,6 +13,7 @@
 
   --color-primary-05: #011109;
   --color-primary-10: #8CD8BC;
+  --color-primary-15: #8CD8BC1A;
 
   /* neutral */
 
@@ -24,6 +25,9 @@
   --color-neutral-15: #FFFFFF14;
   --color-neutral-20: #FFFFFF0D;
   --color-neutral-25: #DADADA;
+  --color-neutral-30: #FFFFFF1A;
+  --color-neutral-35: #FFFFFF4D;
+  --color-neutral-40: #FFFFFFB2;
 
   /* breakpoints */
   --breakpoint-xs: 480px;

@@ -3,6 +3,8 @@ import content from "../assets/Icons/content.svg";
 import topRightArrow from "../assets/Icons/top-right-arrow.svg";
 import whiteTopRightArrow from "../assets/Icons/white-top-right-arrow.svg";
 
+import productDemo from "../assets/Images/product-demo.png"
+
 import heroBg from "../assets/Images/hero-bg.webp";
 import profile from "../assets/Images/profile.webp";
 
@@ -26,6 +28,7 @@ export const ICONS = {
 export const IMAGES = {
   heroBg,
   profile,
+  productDemo
 };
 export const STROKES = {
   stroke1,
