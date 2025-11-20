@@ -12,10 +12,10 @@ const Heading = ({
   alignText?: string;
 }) => {
   return (
-    <div className={`flex flex-col font-Figtree space-y-3 lg:space-y-6 ${alignment}`}>
+    <div className={`flex w-full flex-col font-Figtree space-y-3 lg:space-y-6 ${alignment}`}>
       <h2 className={`uppercase border text-white leading-4 lg:leading-[21px] border-neutral-10 bg-secondary-10 w-fit rounded-full py-1 px-2 lg:px-3 text-xs lg:text-sm font-bold ${alignText}`}>{`// ${heading}` }</h2>
       <h3
-        className={` capitalize text-white leading-[24.24px] lg:leading-[48.48px] text-2xl lg:text-[48px] tracking-[-1.12px] lg:tracking-[-1.92px] font-bold ${alignText}`}
+        className={`w-full capitalize text-white leading-[24.24px] lg:leading-[48.48px] text-2xl lg:text-[48px] tracking-[-1.12px] lg:tracking-[-1.92px] font-bold ${alignText}`}
       >
         {subheading}
       </h3>

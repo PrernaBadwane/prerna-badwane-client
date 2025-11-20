@@ -1,6 +1,7 @@
 import { ICONS, IMAGES } from "@/assets";
 import Button from "@/components/Reusable/Button/Button";
 import Container from "@/components/Reusable/Container/Container";
+import SecondaryButton from "@/components/Reusable/SecondaryButton/SecondaryButton";
 import SkillStrip from "@/components/Shared/SkillStrip/SkillStrip";
 import Image from "next/image";
 import React from "react";
@@ -13,12 +14,12 @@ const HeroSection = () => {
           src={IMAGES.heroBg}
           alt="Hero Background"
           fill
-          className="object-cover"
+          className="object-cover overflow-hidden"
           priority
         />
 
         {/* Overlay */}
-        <div className="absolute pt-10 inset-0 bg-black/50 flex flex-col z-20 items-center justify-center text-white">
+        <div className="absolute pt-10 inset-0  flex flex-col z-30 items-center justify-center text-white">
           <Image
             src={IMAGES.profile}
             alt="Profile"
@@ -36,17 +37,14 @@ const HeroSection = () => {
             technology-driven solutions.
           </p>
           <div className="flex mt-6  lg:mt-8">
-          <Button
-          label="Book a free consultation"
-          classnames="py-3 px-[27px] rounded-2xl"
-          />
-          <Button
-          icon={ICONS.topRightArrow}
-          classnames="py-2.5 px-2.5 rounded-2xl"
-          />
+            <SecondaryButton
+              label="Book a free consultation"
+              classnames="py-3 px-[27px] rounded-2xl"
+              icon={ICONS.topRightArrow}
+              iconClassname="py-2.5 px-2.5 rounded-2xl"
+            />
+          </div>
         </div>
-        </div>
-        
       </Container>
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-10 w-full h-[113px] z-10"></div>
       <div className="absolute bottom-[-120] left-0 right-0 z-20 ">

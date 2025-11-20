@@ -19,9 +19,7 @@ const MyWorks = () => {
         "A brief description of Project Alpha, highlighting its key features and purpose.",
       tags: ["React", "Next.js", "Tailwind CSS"],
       imageUrl: IMAGES.productDemo,
-    },
-
-    {
+    },{
       title: "Project Beta",
       description:
         "This is Project Beta, a cool application built with modern web technologies.",
@@ -42,6 +40,8 @@ const MyWorks = () => {
       tags: ["Next.js", "Stripe", "TypeScript"],
       imageUrl: IMAGES.productDemo,
     },
+
+    
   ];
 
   return (
@@ -53,15 +53,16 @@ const MyWorks = () => {
 
       <Container>
         {/* ensure this content stacks above the decorative image */}
-        <div className="flex flex-col md:flex-row gap-4 items-start justify-between z-[10] relative">
+        <div className="flex flex-col md:flex-row gap-4 items-start xs:items-center md:items-start justify-between z-[10] relative">
           <Heading
             heading="My Works"
             subheading="my selected works"
             alignText="max-w-sm text-left xs:text-center md:text-left"
+            alignment="items-start xs:items-center md:items-start"
             
           />
-          <div className="flex flex-col md:items-end max-w-md">
-            <p className="text-white text-lg">
+          <div className="flex flex-col xs:items-center md:items-end max-w-md">
+            <p className="text-white xs:text-center md:text-left text-lg">
               A few examples of how I build digital experiences that are simple,
               scalable, and built for impact.
             </p>
@@ -73,7 +74,7 @@ const MyWorks = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row mt-16 gap-10 md:gap-0">
+        <div className="flex flex-col items-start xs:items-center md:items-start lg:flex-row mt-16 gap-10 md:gap-10 lg:gap-4">
           <div className="w-full overflow-x-scroll lg:overflow-x-hidden lg:w-[33%] flex lg:flex-col flex-row gap-0">
             {Categories.map((category) => {
               const isActive = currentCategory === category;
@@ -83,7 +84,7 @@ const MyWorks = () => {
                   type="button"
                   onClick={() => setCurrentCategory(category)}
                   aria-pressed={isActive}
-                  className={`border-r text-xs md:text-base text-left text-white lg:border-r-0 lg:border-b cursor-pointer border-neutral-30 px-4 lg:px-3 py-3 uppercase font-medium focus:outline-none ${
+                  className={`border-r text-xs lg:text-base text-left text-white lg:border-r-0 lg:border-b cursor-pointer border-neutral-30 px-4 lg:px-3 py-3 uppercase font-medium focus:outline-none ${
                     isActive ? "bg-secondary-05" : "bg-transparent"
                   }`}
                 >
@@ -94,7 +95,7 @@ const MyWorks = () => {
           </div>
 
           <div className="w-full lg:w-[64%]">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-7 p-4 place-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[30px] gap-y-10 place-items-center">
               {projects.map((project, index) => (
                 <ProjectCard key={index} project={project} />
               ))}

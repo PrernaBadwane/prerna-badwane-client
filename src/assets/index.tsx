@@ -6,11 +6,15 @@ import whiteTopRightArrow from "../assets/Icons/white-top-right-arrow.svg";
 import productDemo from "../assets/Images/product-demo.png"
 
 import heroBg from "../assets/Images/hero-bg.webp";
+
+// dummy
 import profile from "../assets/Images/profile.webp";
+import service from "../assets/Images/services.png"
 
 // strokes
 import stroke1 from "../assets/BackgroundGradients/stroke1.svg";
 import stroke2 from "../assets/BackgroundGradients/stroke2.svg";
+import stroke3 from "../assets/BackgroundGradients/stroke3.webp";
 // social media
 import instagram from "../assets/Icons/socialMedia/instagrma.svg";
 import likedIn from "../assets/Icons/socialMedia/linkedin.svg";
@@ -28,9 +32,11 @@ export const ICONS = {
 export const IMAGES = {
   heroBg,
   profile,
-  productDemo
+  productDemo,
+  service
 };
 export const STROKES = {
   stroke1,
   stroke2,
+  stroke3
 };
