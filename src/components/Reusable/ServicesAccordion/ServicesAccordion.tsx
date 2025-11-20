@@ -143,7 +143,7 @@ const ServicesAccordion = () => {
                 </motion.div>
                 <motion.div className="flex gap-[150px] ">
                   <motion.div
-                    className="flex items-center bg-primary-20 hover:bg-secondary-05 justify-center border border-white hover:border-secondary-05  p-2.5 rounded-xl md:rounded-2xl transition duration-300 "
+                    className={`flex items-center bg-primary-20 hover:bg-secondary-05 justify-center border  hover:border-secondary-05  p-2.5 rounded-xl md:rounded-2xl transition duration-300 ${isExpanded? "bg-secondary-05 border-secondary-05":"border-white"}`}
                     variants={{
                       visible: { y: 0, opacity: 1 },
                       hidden: { y: -20, opacity: 0 },

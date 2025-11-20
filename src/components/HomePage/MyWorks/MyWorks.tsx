@@ -62,7 +62,7 @@ const MyWorks = () => {
             
           />
           <div className="flex flex-col xs:items-center md:items-end max-w-md">
-            <p className="text-white xs:text-center md:text-left text-lg">
+            <p className="text-white xs:text-center md:text-left text-sm lg:text-lg">
               A few examples of how I build digital experiences that are simple,
               scalable, and built for impact.
             </p>
