@@ -3,17 +3,17 @@ import React from 'react'
 
 const CounterSection = () => {
   return (
-    <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-6">
+    <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 items-center justify-between gap-6 font-Figtree">
       {CounterData.map((item, key) => (
         <div
           key={key}
           className="w-64"
         >
-          <h2 className="text-white text-shadow-10 text-4xl font-semibold">
+          <h2 className="text-black dark:text-white text-shadow-10 text-4xl font-semibold">
             {item.count}
             <span className="text-primary-10 text-4xl font-semibold">+</span>
           </h2>
-          <p className="text-lg text-neutral-25 mt-6">{item.description}</p>
+          <p className="text-lg text-neutral-50 dark:text-neutral-25 mt-6">{item.description}</p>
         </div>
       ))}
     </div>

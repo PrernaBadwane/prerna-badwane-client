@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+
 import { twMerge } from "tailwind-merge";
 import React from "react";
 
@@ -11,7 +11,7 @@ const Button = ({
   onClick,
 }: {
   label?: string;
-  icon?: string | StaticImageData;
+  icon?: string | React.ReactNode;
   classnames?: string;
   labelClassname?: string;
   iconClassname?: string;
@@ -21,12 +21,12 @@ const Button = ({
     <button
       onClick={onClick}
       className={twMerge(
-        "flex items-center justify-center gap-3 bg-white py-2 px-4 rounded-lg text-neutral-05 font-semibold hover:scale-[101%] leading-[19.5px] transition cursor-pointer border border-white",
+        "flex items-center justify-center gap-3 bg-white py-2 px-4 rounded-lg text-neutral-05 font-medium hover:scale-[101%] leading-[19.5px] transition cursor-pointer border dark:border-white border-primary-10 shadow-20 dark:shadow-none",
         classnames
       )}
     >
       {icon && (
-        <Image src={icon} alt="icon" className={twMerge("w-5 h-5", iconClassname)} />
+        <span className={twMerge("text-xl", iconClassname)} >{icon}</span>
       )}
       {label && <span className={labelClassname}>{label}</span>}
     </button>

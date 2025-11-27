@@ -4,6 +4,7 @@ import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { LuFileSymlink } from "react-icons/lu";
 
 const Navbar = () => {
   const navItems = [{
@@ -39,7 +40,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Button label="Download Resume" classnames="text-sm px-4 py-2.5 flex-row-reverse my-[3px]" icon={ICONS.content} labelClassname="hidden sm:block"/>
+        <Button label="Download Resume" classnames="text-sm px-4 py-2.5 flex-row-reverse my-[3px]" icon={<LuFileSymlink />} labelClassname="hidden sm:block"/>
       </div>
     </div>
   );

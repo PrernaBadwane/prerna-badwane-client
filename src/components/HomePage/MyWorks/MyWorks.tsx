@@ -8,6 +8,7 @@ import ProjectCard, {
 } from "@/components/Reusable/ProjectCard/ProjectCard";
 import Image from "next/image";
 import { useState } from "react";
+import { IoArrowUpOutline } from "react-icons/io5";
 
 const MyWorks = () => {
   const Categories = ["AI", "FINTECH", "HEALTHCARE", "SAAS", "ECOMMERCE"];
@@ -45,7 +46,7 @@ const MyWorks = () => {
   ];
 
   return (
-    <div className="relative bg-primary-05 h-fit py-12 lg:py-52 font-Figtree">
+    <div className="relative bg-primary-30 dark:bg-primary-05 h-fit py-12 lg:py-52 font-Figtree">
       {/* decorative background - don't let it block pointer events */}
       <div className="absolute top-0 left-0 z-0 pointer-events-none">
         <Image src={STROKES.stroke2} alt="stroke-background" />
@@ -62,14 +63,15 @@ const MyWorks = () => {
             
           />
           <div className="flex flex-col xs:items-center md:items-end max-w-md">
-            <p className="text-white xs:text-center md:text-left text-sm lg:text-lg">
+            <p className="text-neutral-50 dark:text-white xs:text-center md:text-left text-sm lg:text-lg">
               A few examples of how I build digital experiences that are simple,
               scalable, and built for impact.
             </p>
             <Button
               label="Contact me"
-              icon={ICONS.whiteTopRightArrow}
-              classnames="flex-row-reverse bg-transparent text-white border-white w-fit font-semibold py-3.5 px-5 mt-6"
+              icon={<IoArrowUpOutline/>}
+              classnames="flex-row-reverse w-fit bg-transparent text-black dark:text-white font-semibold py-3.5 px-5 mt-6 lg:mt-13"
+                iconClassname="rotate-45 "
             />
           </div>
         </div>
@@ -84,8 +86,8 @@ const MyWorks = () => {
                   type="button"
                   onClick={() => setCurrentCategory(category)}
                   aria-pressed={isActive}
-                  className={`border-r text-xs lg:text-base text-left text-white lg:border-r-0 lg:border-b cursor-pointer border-neutral-30 px-4 lg:px-3 py-3 uppercase font-medium focus:outline-none ${
-                    isActive ? "bg-secondary-05" : "bg-transparent"
+                  className={`border-r text-xs lg:text-base text-left text-black dark:text-white lg:border-r-0 lg:border-b cursor-pointer border-neutral-30 px-4 lg:px-3 py-3 uppercase font-medium focus:outline-none ${
+                    isActive ? "bg-secondary-05 text-white" : "bg-transparent"
                   }`}
                 >
                   {category}

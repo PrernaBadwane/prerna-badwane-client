@@ -19,7 +19,7 @@ const SkillStrip = () => {
   return (
     <div className="relative w-full h-[200px] flex items-center justify-center overflow-hidden bg-transparent">
       {/* First Strip (tilted right) */}
-      <div className="absolute w-[150%] left-1/2 -translate-x-1/2 bg-secondary-05 rotate-5 sm:rotate-6 lg:rotate-[4deg] flex items-center justify-around py-2 lg:py-4 font-Figtree animate-marquee">
+      <div className="absolute w-[150%] left-1/2 -translate-x-1/2 bg-secondary-05 rotate-5 sm:rotate-6 lg:rotate-[4deg] flex items-center justify-around py-2 lg:py-4 font-Figtree ">
         {skills.map((skill, index) => (
           <div
             key={index}

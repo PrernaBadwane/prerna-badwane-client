@@ -5,11 +5,12 @@ import Image from "next/image";
 import SocialMedia from "./SocialMedia";
 import Button from "@/components/Reusable/Button/Button";
 import CounterSection from "../CounterSection/CounterSection";
+import { IoArrowUpOutline } from "react-icons/io5";
 
 const AboutMeSection = () => {
   return (
-    <div className="relative bg-primary-05 h-full pt-32 pb-14 lg:pt-52 lg:pb-24">
-      <div className="absolute top-10 h-full">
+    <div className="relative h-full pt-32 pb-14 lg:pt-52 lg:pb-24">
+      <div className="hidden dark:block absolute top-10 h-full">
         <Image src={STROKES.stroke1} alt="stroke-background" className="h-full w-full" />
       </div>
       <>
@@ -23,7 +24,7 @@ const AboutMeSection = () => {
               <SocialMedia />
             </div>
             <div className="w-full lg:w-[50%]">
-              <p className="text-base md:text-lg lg:text-xl leading-[140%] text-white font-medium">
+              <p className="text-base md:text-lg lg:text-xl leading-[140%] text-black dark:text-white font-medium">
                 I’m Prerna Badwane, a developer passionate about solving
                 real-world challenges through smart, intuitive software. I build
                 digital systems that streamline operations, boost efficiency,
@@ -37,8 +38,9 @@ const AboutMeSection = () => {
               </p>
               <Button
                 label="Discover More"
-                icon={ICONS.whiteTopRightArrow}
-                classnames="flex-row-reverse bg-transparent text-white border-white font-semibold py-3.5 px-5 mt-6 lg:mt-13"
+                icon={<IoArrowUpOutline/>}
+                classnames="flex-row-reverse bg-transparent text-black dark:text-white font-semibold py-3.5 px-5 mt-6 lg:mt-13"
+                iconClassname="rotate-45"
               />
             </div>
           </div>

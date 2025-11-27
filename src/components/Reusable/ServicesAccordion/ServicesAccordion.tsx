@@ -5,6 +5,7 @@ import { ICONS, IMAGES } from "@/assets";
 import { title } from "process";
 import Image from "next/image";
 import { useIsBelowMD } from "@/hook/isBoolean";
+import { IoArrowUpOutline } from "react-icons/io5";
 
 // data
 const accordionData = [
@@ -89,11 +90,11 @@ const ServicesAccordion = () => {
         return (
           <motion.div
             key={item.order}
-            className="relative cursor-pointer overflow-hidden border-b-[0.3px] border-white"
+            className="relative cursor-pointer overflow-hidden border-b-[0.3px] border-secondary-05 dark:border-white font-Figtree"
             animate={{
-              height: isExpanded ? (isMobile?"800px":"470px" ): "80px",
+              height: isExpanded ? (isMobile?"720px":"470px" ): "80px",
             }}
-            initial={{ height: index === 0 ? (isMobile?"800px":"420px" ) : "80px" }}
+            initial={{ height: index === 0 ? (isMobile?"720px":"420px" ) : "80px" }}
             transition={{
               duration: 0.6,
               type: "spring",
@@ -102,7 +103,7 @@ const ServicesAccordion = () => {
             }}
             onClick={() => setExpandedIndex(index)}
             whileHover={{
-              height: isExpanded ? (isMobile?"800px":"420px" ) : "100px",
+              height: isExpanded ? (isMobile?"720px":"420px" ) : "100px",
             }}
             layout
           >
@@ -111,7 +112,7 @@ const ServicesAccordion = () => {
               transition={{ duration: 0.6 }}
             />
 
-            <div className="absolute inset-0 flex flex-col py-6 text-white">
+            <div className="absolute inset-0 flex flex-col py-6 text-black dark:text-white">
               <motion.div
                 initial="hidden"
                 animate={controls}
@@ -121,9 +122,9 @@ const ServicesAccordion = () => {
                 }}
               >
                 <motion.div className="flex items-center justify-between">
-                <motion.div className="flex lg:gap-[150px] items-center justify-between ">
+                <motion.div className="flex lg:gap-[130px] items-center justify-between ">
                   <motion.h3
-                    className="text-base lg:text-xl font-bold pr-2 lg:w-10"
+                    className="text-lg lg:text-xl font-bold pr-2 lg:w-10"
                     variants={{
                       visible: { y: 0, opacity: 1 },
                       hidden: { y: -20, opacity: 0 },
@@ -132,7 +133,7 @@ const ServicesAccordion = () => {
                     ({item.order})
                   </motion.h3>{" "}
                   <motion.h3
-                    className="text-base lg:text-xl font-bold"
+                    className="text-lg lg:text-xl font-bold"
                     variants={{
                       visible: { y: 0, opacity: 1 },
                       hidden: { y: -20, opacity: 0 },
@@ -143,13 +144,13 @@ const ServicesAccordion = () => {
                 </motion.div>
                 <motion.div className="flex gap-[150px] ">
                   <motion.div
-                    className={`flex items-center bg-primary-20 hover:bg-secondary-05 justify-center border  hover:border-secondary-05  p-2.5 rounded-xl md:rounded-2xl transition duration-300 ${isExpanded? "bg-secondary-05 border-secondary-05":"border-white"}`}
+                    className={`flex items-center  hover:bg-secondary-05 justify-center border  hover:border-secondary-05  p-2.5 rounded-xl md:rounded-2xl transition duration-300 ${isExpanded? "bg-secondary-05 border-secondary-05":"bg-secondary-10/30 dark:bg-primary-20  border-white"}`}
                     variants={{
                       visible: { y: 0, opacity: 1 },
                       hidden: { y: -20, opacity: 0 },
                     }}
                   >
-                    <Image src={ICONS.whiteTopRightArrow} alt={item.title} className="size-3 md:size-5" />
+                    <IoArrowUpOutline className={`size-3 md:size-5 rotate-45 ${isExpanded? " text-white":"text-black"}`} />
                   </motion.div>
                   
                 </motion.div>
@@ -181,7 +182,7 @@ const ServicesAccordion = () => {
                         initial="hidden"
                         animate="visible"
                         exit="hidden"
-                        className="overflow-hidden pl-2 lg:pl-[190px] flex flex-col md:flex-row justify-between mt-8 mb-10 gap-10"
+                        className="overflow-hidden pl-2 lg:pl-[170px] flex flex-col md:flex-row justify-between mt-8 mb-10 gap-10"
                       >
                         <motion.div className="w-full md:w-[50%]">
                             <motion.p
@@ -191,14 +192,14 @@ const ServicesAccordion = () => {
                             }}
                             className="text-base mb-4"
                           >
-                            <span className="text-bold text-primary-10 pr-2">{"// "}</span>  {item.subtitle}
+                            <span className="text-bold text-base lg:text-lg text-primary-10 pr-2">{"// "}</span>  {item.subtitle}
                           </motion.p>
                           <motion.p
                             variants={{
                               visible: { y: 0, opacity: 1 },
                               hidden: { y: 20, opacity: 0 },
                             }}
-                            className="text-base mb-6"
+                            className="text-sm lg:text-lg mb-6"
                           >
                             {item.description}
                           </motion.p>
@@ -210,7 +211,7 @@ const ServicesAccordion = () => {
                             }}
                             className="space-x-2 grid grid-cols-1 lg:grid-cols-2 gap-2"
                           >
-                          {item.services.map((service)=><p key={service} className="text-white text-nowrap"><span className="text-neutral-45 pr-1">↳ </span>{service}</p>)}
+                          {item.services.map((service)=><p key={service} className="text-black dark:text-white text-sm lg:text-lg text-nowrap"><span className="text-neutral-45 pr-1">↳ </span>{service}</p>)}
                           
                           </motion.div>
                         </motion.div>

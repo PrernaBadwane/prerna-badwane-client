@@ -11,7 +11,7 @@ const SecondaryButton = ({
   onClick,
 }: {
   label: string;    
-  icon: string | StaticImageData;
+  icon: string | React.ReactNode;
   classnames?: string;
   labelClassname?: string;
   iconClassname?: string;
@@ -21,13 +21,13 @@ const SecondaryButton = ({
    
     <button onClick={onClick} className='flex gap-0 hover:scale-[101%]'>
         <div  className={twMerge(
-        "flex items-center justify-center gap-3 bg-white py-2 px-4 rounded-2xl text-neutral-05 font-semibold hover:scale-[101%] leading-[19.5px] transition cursor-pointer border border-white",
+        "flex items-center justify-center gap-3 px-4 bg-white rounded-2xl text-neutral-05 font-semibold hover:scale-[101%]  transition cursor-pointer border dark:border-white border-primary-10 shadow-20 dark:shadow-none",
         classnames
       )}><span className={`${labelClassname}`}>{label}</span></div>
       <div className={twMerge(
-        "flex items-center justify-center gap-3 bg-white rounded-2xl  font-semibold hover:scale-[101%] leading-[19.5px] transition cursor-pointer border border-white",
-        iconClassname
-      )}><Image  src={icon} alt={label}/></div>
+        "flex items-center justify-center gap-3 p-2.5 bg-white rounded-2xl hover:scale-[101%] transition cursor-pointer border dark:border-white border-primary-10 shadow-20 dark:shadow-none text-xl",
+       classnames
+      )}><span className={(twMerge( iconClassname))}>{icon}</span></div>
         
     </button>
   )

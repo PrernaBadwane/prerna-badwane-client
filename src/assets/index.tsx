@@ -15,6 +15,7 @@ import service from "../assets/Images/services.png"
 import stroke1 from "../assets/BackgroundGradients/stroke1.svg";
 import stroke2 from "../assets/BackgroundGradients/stroke2.svg";
 import stroke3 from "../assets/BackgroundGradients/stroke3.webp";
+import stroke4 from "../assets/BackgroundGradients/stroke4.svg"
 // social media
 import instagram from "../assets/Icons/socialMedia/instagrma.svg";
 import likedIn from "../assets/Icons/socialMedia/linkedin.svg";
@@ -38,5 +39,6 @@ export const IMAGES = {
 export const STROKES = {
   stroke1,
   stroke2,
-  stroke3
+  stroke3,
+  stroke4
 };
