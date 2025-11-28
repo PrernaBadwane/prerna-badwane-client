@@ -1,5 +1,5 @@
 "use client";
-import { ICONS, IMAGES, STROKES } from "@/assets";
+import { IMAGES, STROKES } from "@/assets";
 import Button from "@/components/Reusable/Button/Button";
 import Container from "@/components/Reusable/Container/Container";
 import Heading from "@/components/Reusable/Heading/Heading";
@@ -54,7 +54,7 @@ const MyWorks = () => {
 
       <Container>
         {/* ensure this content stacks above the decorative image */}
-        <div className="flex flex-col md:flex-row gap-4 items-start xs:items-center md:items-start justify-between z-[10] relative">
+        <div className="flex flex-col md:flex-row gap-4 items-start xs:items-center md:items-start justify-between z-10 relative">
           <Heading
             heading="My Works"
             subheading="my selected works"

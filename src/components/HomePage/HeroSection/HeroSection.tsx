@@ -1,5 +1,4 @@
-import { ICONS, IMAGES, STROKES } from "@/assets";
-import Button from "@/components/Reusable/Button/Button";
+import { IMAGES, STROKES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import SecondaryButton from "@/components/Reusable/SecondaryButton/SecondaryButton";
 import SkillStrip from "@/components/Shared/SkillStrip/SkillStrip";
@@ -12,7 +11,7 @@ const HeroSection = () => {
     <div className="relative">
       {" "}
       <div className="relative overflow-hidden w-full h-[95vh] pt-10 font-Figtree">
-        <div className="absolute overflow-hidden -top-[160px] -right-[180px] dark:hidden">
+        <div className="absolute overflow-hidden -top-40 -right-[180px] dark:hidden">
           <Image
             src={STROKES.stroke4}
             alt="Hero Light Background"

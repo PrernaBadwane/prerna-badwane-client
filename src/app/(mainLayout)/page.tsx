@@ -3,6 +3,7 @@ import DevelopmentSteps from "@/components/HomePage/DevelopmentSteps/Development
 import HeroSection from "@/components/HomePage/HeroSection/HeroSection";
 import MyWorks from "@/components/HomePage/MyWorks/MyWorks";
 import Services from "@/components/HomePage/Services/Services";
+import Testimonials from "@/components/Reusable/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <MyWorks/>
       <Services/>
       <DevelopmentSteps/>
+      <Testimonials/>
     </div>
   
   );

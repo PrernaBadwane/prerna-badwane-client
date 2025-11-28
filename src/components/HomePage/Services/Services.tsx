@@ -1,4 +1,4 @@
-import { ICONS, STROKES } from "@/assets";
+import {STROKES } from "@/assets";
 import Container from "@/components/Reusable/Container/Container";
 import Heading from "@/components/Reusable/Heading/Heading";
 import SecondaryButton from "@/components/Reusable/SecondaryButton/SecondaryButton";
@@ -17,7 +17,7 @@ const Services = () => {
         />
       </div>
       <Container>
-        <div className="relative z-[30]">
+        <div className="relative z-30">
           <div className="mb-[70px] space-y-1.5 max-w-2xl mx-auto">
             <Heading
               heading="My Works"

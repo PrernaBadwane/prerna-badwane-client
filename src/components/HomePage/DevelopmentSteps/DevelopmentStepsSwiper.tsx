@@ -58,7 +58,7 @@ const DevelopmentStepsSwiper = () => {
 
               <div className="w-full border-[0.1px] h-0 border-white my-[30px]" />
 
-              <p className="leading-[150%] whitespace-normal break-words">{c.desc}</p>
+              <p className="leading-[150%] whitespace-normal wrap-break-words">{c.desc}</p>
             </div>
           </motion.article>
         ))}
