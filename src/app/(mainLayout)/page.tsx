@@ -3,6 +3,7 @@ import DevelopmentSteps from "@/components/HomePage/DevelopmentSteps/Development
 import HeroSection from "@/components/HomePage/HeroSection/HeroSection";
 import MyWorks from "@/components/HomePage/MyWorks/MyWorks";
 import Services from "@/components/HomePage/Services/Services";
+import CallToAction from "@/components/Reusable/CallToAction/CallToAction";
 import Testimonials from "@/components/Reusable/Testimonials/Testimonials";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Services/>
       <DevelopmentSteps/>
       <Testimonials/>
+      <CallToAction/>
     </div>
   
   );

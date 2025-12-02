@@ -1,6 +1,5 @@
 import { ICONS } from "@/assets";
 import Button from "@/components/Reusable/Button/Button";
-import Container from "@/components/Reusable/Container/Container";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -12,7 +11,7 @@ const Navbar = () => {
     link: "/"
   }, {
     label: "About",
-    link: "/about"
+    link: "/about-me"
   }, {
     label: "Projects",
     link: "/projects"

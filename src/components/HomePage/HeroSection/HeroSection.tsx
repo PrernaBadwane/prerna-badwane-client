@@ -58,7 +58,7 @@ const HeroSection = () => {
               <SecondaryButton
                 label="Book a free consultation"
                 icon={<IoArrowUpOutline/>}
-                iconClassname="text-black rotate-45"
+                iconClassname="text-black rotate-45 mt-1"
               />
             </div>
           </div>

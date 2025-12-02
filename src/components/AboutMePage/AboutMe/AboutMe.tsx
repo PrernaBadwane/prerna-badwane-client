@@ -1,13 +1,13 @@
-import { ICONS, STROKES } from "@/assets";
-import Container from "@/components/Reusable/Container/Container";
-import Heading from "@/components/Reusable/Heading/Heading";
-import Image from "next/image";
-import SocialMedia from "./SocialMedia";
-import Button from "@/components/Reusable/Button/Button";
-import CounterSection from "../CounterSection/CounterSection";
-import { IoArrowUpOutline } from "react-icons/io5";
+import { STROKES } from '@/assets'
+import CounterSection from '@/components/HomePage/CounterSection/CounterSection'
+import Button from '@/components/Reusable/Button/Button'
+import Container from '@/components/Reusable/Container/Container'
+import Heading from '@/components/Reusable/Heading/Heading'
+import Image from 'next/image'
+import React from 'react'
+import { IoArrowUpOutline } from 'react-icons/io5'
 
-const AboutMeSection = () => {
+const AboutMe = () => {
   return (
     <div className="relative h-full pt-32 pb-14 lg:pt-52 lg:pb-24">
       <div className="hidden dark:block absolute top-10 h-full">
@@ -21,7 +21,6 @@ const AboutMeSection = () => {
                 heading="About me"
                 subheading="Crafting Digital Solutions That Drive Success"
               />
-              <SocialMedia />
             </div>
             <div className="w-full lg:w-[50%]">
               <p className="text-base md:text-lg lg:text-xl leading-[140%] text-black dark:text-white font-medium">
@@ -48,7 +47,7 @@ const AboutMeSection = () => {
         </Container>
       </>
     </div>
-  );
-};
+  )
+}
 
-export default AboutMeSection;
+export default AboutMe
