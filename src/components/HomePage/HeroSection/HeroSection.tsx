@@ -17,6 +17,7 @@ const HeroSection = () => {
             alt="Hero Light Background"
             className="object-cover overflow-hidden size-[626px]"
             priority
+            fetchPriority="high"
           />
         </div>
         <div className="absolute overflow-hidden -top-[180px] -left-[200px] dark:hidden">
@@ -25,6 +26,7 @@ const HeroSection = () => {
             alt="Hero Light Background"
             className="object-cover overflow-hidden size-[626px] rotate-100"
             priority
+            fetchPriority="high"
           />
         </div>
 
@@ -34,6 +36,7 @@ const HeroSection = () => {
           fill
           className="absolute object-cover hidden dark:block"
           priority
+          fetchPriority="high"
         />
         <Container>
           {/* Overlay */}
@@ -58,7 +61,7 @@ const HeroSection = () => {
               <SecondaryButton
                 label="Book a free consultation"
                 icon={<IoArrowUpOutline/>}
-                iconClassname="text-black rotate-45 mt-1"
+                iconClassname="text-black rotate-45 md:mt-1"
               />
             </div>
           </div>
