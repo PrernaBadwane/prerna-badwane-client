@@ -1,4 +1,3 @@
-
 import { twMerge } from "tailwind-merge";
 import React from "react";
 
@@ -21,14 +20,20 @@ const Button = ({
     <button
       onClick={onClick}
       className={twMerge(
-        "flex items-center justify-center gap-3 bg-white py-1 px-2 md:py-2 md:px-4 rounded-lg text-neutral-05 font-medium hover:scale-[101%] leading-[19.5px] transition cursor-pointer border dark:border-white border-primary-10 shadow-20 dark:shadow-none",
+        "flex items-center justify-center gap-3 bg-white py-2 px-4 rounded-lg text-neutral-05 font-medium hover:scale-[101%] leading-[19.5px] transition cursor-pointer border dark:border-white border-primary-10 shadow-20 dark:shadow-none",
         classnames
       )}
     >
       {icon && (
-        <span className={twMerge("text-base md:text-xl", iconClassname)} >{icon}</span>
+        <span className={twMerge("text-base md:text-xl", iconClassname)}>
+          {icon}
+        </span>
       )}
-      {label && <span className={twMerge("text-sm md:text-base",labelClassname)}>{label}</span>}
+      {label && (
+        <span className={twMerge("text-sm md:text-base", labelClassname)}>
+          {label}
+        </span>
+      )}
     </button>
   );
 };

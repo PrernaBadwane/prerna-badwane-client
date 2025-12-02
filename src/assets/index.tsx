@@ -20,6 +20,9 @@ import stroke4 from "../assets/BackgroundGradients/stroke4.svg";
 import stroke5 from "../assets/BackgroundGradients/stroke5.svg";
 import stroke6 from "../assets/BackgroundGradients/stroke6.svg";
 import stroke7 from "../assets/BackgroundGradients/stroke7.svg";
+import stroke8 from "../assets/BackgroundGradients/stroke8.svg";
+import stroke9 from "../assets/BackgroundGradients/stroke9.svg";
+import stroke10 from "../assets/BackgroundGradients/stroke10.webp";
 // social media
 import instagram from "../assets/Icons/socialMedia/instagrma.svg";
 import likedIn from "../assets/Icons/socialMedia/linkedin.svg";
@@ -49,4 +52,7 @@ export const STROKES = {
   stroke5,
   stroke6,
   stroke7,
+  stroke8,
+  stroke9,
+  stroke10,
 };

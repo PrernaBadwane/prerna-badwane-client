@@ -13,14 +13,14 @@ const Navbar = () => {
     label: "About",
     link: "/about-me"
   }, {
-    label: "Projects",
-    link: "/projects"
+    label: "Services",
+    link: "/services"
   },{
     label:"Blogs"
     ,link:"/blogs"
   },{
     label :"Contact",
-    link : "/contact"
+    link : "/contact-us"
   }
 ];
   return (
@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-        <Button label="Download Resume" classnames="text-sm px-4 py-2.5 flex-row-reverse my-[3px]" icon={<LuFileSymlink />} labelClassname="hidden sm:block"/>
+        <Button label="Download Resume" classnames="text-sm px-4 py-2.5 w-fit flex-row-reverse my-[3px]" icon={<LuFileSymlink />} labelClassname="hidden sm:block"/>
       </div>
     </div>
   );

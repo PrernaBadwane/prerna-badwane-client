@@ -13,7 +13,7 @@ export default function Home() {
       <AboutMeSection/>
       <MyWorks/>
       <Services/>
-      <DevelopmentSteps/>
+      <DevelopmentSteps variant={false}/>
       <Testimonials/>
       <CallToAction/>
     </div>

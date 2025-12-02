@@ -39,8 +39,8 @@ const AboutMeSection = () => {
               <Button
                 label="Discover More"
                 icon={<IoArrowUpOutline/>}
-                classnames="flex-row-reverse bg-transparent text-black dark:text-white font-semibold py-3.5 px-5 mt-6 lg:mt-13"
-                iconClassname="rotate-45 mt-1"
+                classnames="flex-row-reverse w-fit bg-transparent text-black dark:text-white font-semibold mt-6 lg:mt-13"
+                iconClassname="rotate-45 md:mt-1"
               />
             </div>
           </div>

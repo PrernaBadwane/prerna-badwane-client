@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: { project: TProject }) => {
         {project.tags.map((tag) => (
           <p
             key={tag}
-            className="px-2 py-1  rounded-full bg-primary-25 dark:bg-primary-15 text-black dark:text-primary-10 text-[8px]"
+            className="px-2 py-1  rounded-full bg-primary-25 dark:bg-primary-15 text-black dark:text-primary-10 text-[10px]"
           >
             {tag}
           </p>
