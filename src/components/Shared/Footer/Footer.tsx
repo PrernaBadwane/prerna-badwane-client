@@ -55,13 +55,13 @@ const Footer = () => {
   ];
 
   return (
-    <div className="relative bg-primary-05 font-Figtree">
+    <div className="relative bg-primary-05 font-Figtree overflow-visible">
       <Image
         src={STROKES.stroke3}
         alt="hero section"
         fill
         priority
-        className="hidden dark:block scale-y-[-1] scale-X-[-1] object-cover opacity-70"
+        className="hidden dark:block scale-y-[-1] scale-X-[-1] opacity-70"
       />
 
       <Container>

@@ -47,10 +47,6 @@
   --color-neutral-85: #FFFFFF66;
   --color-neutral-90: #0000000D;
 
-  /* breakpoints */
-  --breakpoint-xs: 480px;
-  --breakpoint-3xl: 1920px;
-
   /* Shadows */
   --shadow-10: 0 20px 44px 0 rgba(0, 0, 0, 0.16);
   --shadow-20: 0 6.996px 7.221px -4.821px rgba(81, 57, 234, 0.25),

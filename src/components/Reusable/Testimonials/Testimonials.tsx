@@ -6,12 +6,12 @@ import Image from "next/image";
 
 const Testimonials = () => {
   return (
-    <div className="relative bg-primary-30 dark:bg-primary-05 py-10 lg:py-[100px] overflow-hidden">
-      <div className="absolute overflow-hidden top-0 -left-[400px] hidden dark:block">
+    <div className="relative bg-primary-30 dark:bg-primary-05 py-10 lg:py-[120px] ">
+      <div className="absolute overflow-visible top-0 -left-[400px] hidden dark:block">
         <Image
           src={STROKES.stroke4}
           alt="Hero Light Background"
-          className="object-cover overflow-hidden size-[826px] rotate-270"
+          className="object-cover overflow-visible size-[800px] rotate-270"
           priority
         />
       </div>

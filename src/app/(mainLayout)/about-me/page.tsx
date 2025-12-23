@@ -3,6 +3,7 @@ import AboutMeHeroSection from "@/components/AboutMePage/AboutMeHeroSection/Abou
 
 import DevelopmentSteps from "@/components/HomePage/DevelopmentSteps/DevelopmentSteps";
 import Testimonials from "@/components/Reusable/Testimonials/Testimonials";
+import Tools from "@/components/Tools/Tools";
 import React from "react";
 
 const page = () => {
@@ -11,6 +12,7 @@ const page = () => {
       <AboutMeHeroSection />
       <AboutMe />
       <Experience/>
+      <Tools/>
       <DevelopmentSteps variant={true}/>
       <Testimonials />
     </div>
